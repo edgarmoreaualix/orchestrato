@@ -19,6 +19,27 @@
     "focus",
     "disabled"
   ],
+  "status_colors": {
+    "new": "#1f6feb",
+    "under_review": "#f59e0b",
+    "planned": "#8b5cf6",
+    "in_progress": "#0ea5e9",
+    "shipped": "#16a34a",
+    "closed": "#64748b"
+  },
+  "status_surface": {
+    "new": "#dbeafe",
+    "under_review": "#fef3c7",
+    "planned": "#ede9fe",
+    "in_progress": "#cffafe",
+    "shipped": "#dcfce7",
+    "closed": "#e2e8f0"
+  },
+  "ux_notes": {
+    "create": "Form highlights required fields and confirms successful submission.",
+    "list": "Board groups entries by status with visible count per status.",
+    "vote": "Vote control toggles optimistic count change and prevents duplicate taps while pending."
+  },
   "notes": "theme placeholder - final",
   "loop_002_stage1": {
     "at": "2026-02-28T11:38:52Z",
@@ -39,5 +60,11 @@
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
     "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T12:00:00Z",
+    "product": "FeedbackFlow",
+    "worker": "worker-frontend",
+    "scope": "status colors and interaction notes"
   }
 }
