@@ -3,7 +3,7 @@
 This placeholder defines a stable JSON contract for FeedbackFlow backend consumers.
 Validation focuses on key presence, status values, and update cadence.
 
-Last updated in loop 001 finalization.
+Last updated in loop 004 stage 2 finalization.
 
 ## Moderation Notes
 - All new submissions enter `new` and require human review (`moderation.requires_review=true`).
