@@ -4,21 +4,63 @@
     "primary": "#1f6feb",
     "secondary": "#0ea5e9",
     "surface": "#f8fafc",
-    "text": "#0f172a"
+    "text": "#0f172a",
+    "success": "#16a34a",
+    "warning": "#d97706",
+    "danger": "#dc2626",
+    "muted": "#64748b",
+    "border": "#cbd5e1"
   },
   "typography": {
     "heading": "Poppins",
-    "body": "Source Sans 3"
+    "body": "Source Sans 3",
+    "mono": "IBM Plex Mono"
   },
   "spacing": {
-    "unit": 8
+    "unit": 8,
+    "scale": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 40
+    },
+    "layout": {
+      "page_padding": 24,
+      "card_padding": 16,
+      "section_gap": 24,
+      "widget_gap": 16
+    }
+  },
+  "radius": {
+    "sm": 6,
+    "md": 10,
+    "lg": 14,
+    "pill": 999
   },
   "states": [
     "default",
     "hover",
     "focus",
-    "disabled"
+    "disabled",
+    "loading",
+    "empty",
+    "error",
+    "success"
   ],
+  "dashboard": {
+    "cards": {
+      "background": "#ffffff",
+      "shadow": "0 8px 24px rgba(15, 23, 42, 0.08)"
+    },
+    "habit_status_colors": {
+      "completed": "#16a34a",
+      "in_progress": "#0ea5e9",
+      "missed": "#dc2626",
+      "planned": "#64748b"
+    }
+  },
   "notes": "theme placeholder - final",
   "loop_002_stage1": {
     "at": "2026-02-28T11:38:52Z",
@@ -38,6 +80,17 @@
   "loop_stage2": {
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
+    "status": "ready"
+  },
+  "loop_004_stage1": {
+    "loop": "004",
+    "at": "2026-02-28T12:55:00Z",
+    "product": "HabitPulse",
+    "worker": "worker-frontend"
+  },
+  "loop_004_stage2": {
+    "loop": "004",
+    "finalized_at": "2026-02-28T12:55:00Z",
     "status": "ready"
   }
 }
