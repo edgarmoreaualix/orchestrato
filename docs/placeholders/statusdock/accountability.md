@@ -14,3 +14,8 @@
 Weekly review with corrective actions tracked in notes.
 
 Last updated in loop 001 finalization.
+
+## Loop 002 Stage 1
+- Product: StatusDock
+- Worker: worker-accountability
+- Updated: 2026-02-28T11:38:52Z
