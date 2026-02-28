@@ -34,5 +34,10 @@
     "at": "2026-02-28T11:46:13Z",
     "product": "GigBoard",
     "worker": "worker-frontend"
+  },
+  "loop_stage2": {
+    "loop": "003",
+    "finalized_at": "2026-02-28T11:46:13Z",
+    "status": "ready"
   }
 }
