@@ -2,5 +2,5 @@
   "product": "StatusDock",
   "incidents": [{"id": "i_1", "severity": "major", "status": "investigating", "timeline": [{"at": "2026-02-28T10:00:00Z", "event": "incident_opened"}]}],
   "update_cadence_minutes": 30,
-  "notes": "incident contract placeholder - draft"
+  "notes": "incident contract placeholder - final"
 }
