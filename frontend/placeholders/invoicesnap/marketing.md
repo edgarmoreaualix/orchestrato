@@ -1,17 +1,17 @@
 # InvoiceSnap Landing Copy
 
 ## Headline
-InvoiceSnap helps teams ship with confidence.
+Create and send clean invoices in under a minute.
 
 ## Value Props
-- Clear setup in minutes
-- Actionable status at a glance
-- Simple workflow that scales
+- Built for freelancers: fast client, item, and tax fields
+- Reuse saved line items and client details to invoice faster
+- Share a professional invoice link and track payment status
 
 ## Call To Action
-Start your InvoiceSnap pilot this week.
+Generate your first InvoiceSnap invoice now.
 
-Last updated in loop 001 finalization.
+Last updated in loop 004 copy refresh.
 
 ## Loop 002 Stage 1
 - Product: InvoiceSnap
