@@ -1,7 +1,24 @@
 {
   "product": "LinkNest",
-  "profile": {"slug": "creator-hub", "display_name": "Creator Hub", "bio": "All my links"},
-  "links": [{"label": "Portfolio", "url": "https://example.com", "click_count": 42}],
-  "rules": {"slug_unique": true},
-  "notes": "profile contract placeholder - final"
+  "profile": {
+    "slug": "creator-hub",
+    "display_name": "Creator Hub",
+    "bio": "All my links"
+  },
+  "links": [
+    {
+      "label": "Portfolio",
+      "url": "https://example.com",
+      "click_count": 42
+    }
+  ],
+  "rules": {
+    "slug_unique": true
+  },
+  "notes": "profile contract placeholder - final",
+  "loop_002_stage1": {
+    "at": "2026-02-28T11:38:52Z",
+    "product": "LinkNest",
+    "worker": "worker-backend"
+  }
 }
