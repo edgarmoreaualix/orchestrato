@@ -1,0 +1,20 @@
+{
+  "task_id": "L004-O4-FE-001",
+  "status": "done",
+  "files_changed": [
+    "frontend/placeholders/feedbackflow/theme.json",
+    "frontend/placeholders/feedbackflow/PREVIEW.md"
+  ],
+  "tests_run": [
+    {
+      "command": "cat frontend/placeholders/feedbackflow/theme.json",
+      "result": "passed"
+    }
+  ],
+  "commit_sha": "22ae41df61adc757268b6958473f36f381e43125",
+  "summary": "Added additive FeedbackFlow status color/surface tokens and UX notes in theme.json, then documented create/list/vote board states in PREVIEW.md. Commits: 9f73b4cd69825d78b8380e9bb4803d10d2bd4923, 22ae41df61adc757268b6958473f36f381e43125.",
+  "risks": [
+    "Status naming assumes backend/frontend consumers use `under_review` and `in_progress` keys consistently.",
+    "PREVIEW.md describes optimistic voting behavior that still requires implementation alignment in runtime UI."
+  ]
+}
