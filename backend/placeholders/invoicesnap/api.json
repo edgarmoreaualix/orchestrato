@@ -11,6 +11,19 @@
     "status"
   ],
   "notes": "metadata contract placeholder - final",
+  "metadata": {
+    "product": {
+      "name": "InvoiceSnap",
+      "use_case": "Invoice generator for freelancers",
+      "domain": "invoicing",
+      "lifecycle": "placeholder"
+    },
+    "contract": {
+      "method": "GET",
+      "response_type": "application/json",
+      "backward_compatibility": "additive-only"
+    }
+  },
   "loop_002_stage1": {
     "at": "2026-02-28T11:38:52Z",
     "product": "InvoiceSnap",
@@ -29,6 +42,17 @@
   "loop_stage2": {
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
+    "status": "ready"
+  },
+  "loop_004_stage1": {
+    "loop": "004",
+    "at": "2026-02-28T12:00:00Z",
+    "product": "InvoiceSnap",
+    "worker": "worker-backend"
+  },
+  "loop_004_stage2": {
+    "loop": "004",
+    "finalized_at": "2026-02-28T12:00:00Z",
     "status": "ready"
   }
 }
