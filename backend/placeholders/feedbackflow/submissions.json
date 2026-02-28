@@ -3,5 +3,5 @@
   "status_lifecycle": ["new", "reviewing", "planned", "in_progress", "resolved", "closed"],
   "submissions": [{"id": "s_1", "title": "Dark mode", "status": "new", "votes": 14}],
   "moderation": {"requires_review": true},
-  "notes": "submission contract placeholder - draft"
+  "notes": "submission contract placeholder - final"
 }
