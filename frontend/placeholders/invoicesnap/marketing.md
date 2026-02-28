@@ -30,3 +30,12 @@ Last updated in loop 004 copy refresh.
 ## Loop 003 Stage 2
 - Finalized placeholder updates for InvoiceSnap (worker-marketing).
 - Updated: 2026-02-28T11:46:13Z
+
+## Loop 004 Stage 1
+- Product: InvoiceSnap
+- Worker: worker-marketing
+- Updated: 2026-02-28T12:50:00Z
+
+## Loop 004 Stage 2
+- Finalized placeholder updates for InvoiceSnap (worker-marketing).
+- Updated: 2026-02-28T12:50:00Z
