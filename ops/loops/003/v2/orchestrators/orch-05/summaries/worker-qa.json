@@ -1,0 +1,14 @@
+{
+  "task_id": "L003-O5-QA-001",
+  "status": "done",
+  "files_changed": [
+  "tests/placeholders/linknest/checklist.md",
+  "tests/placeholders/linknest/contract.spec.md"
+],
+  "tests_run": [
+  "cat tests/placeholders/linknest/checklist.md"
+],
+  "commit_sha": "115fdc00d1ef9f378883232b74a5cee6077d6c95",
+  "summary": "Loop 003 completed for LinkNest worker-qa.",
+  "risks": []
+}
