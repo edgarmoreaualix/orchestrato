@@ -1,16 +1,52 @@
 {
+  "schema_version": "0.4.0",
   "product": "HabitPulse",
+  "generated_at": "2026-02-28T12:05:00Z",
   "habits": [
     {
       "id": "h_1",
       "name": "Hydrate",
-      "frequency": "daily"
+      "frequency": "daily",
+      "target_per_day": 8,
+      "category": "health",
+      "active": true
+    }
+  ],
+  "habit_entries": [
+    {
+      "entry_id": "he_1",
+      "habit_id": "h_1",
+      "status": "completed",
+      "completed_at": "2026-02-28T08:15:00Z",
+      "value": 8,
+      "unit": "glasses"
     }
   ],
   "streak": {
     "current": 4,
     "longest": 12,
     "last_completed_at": "2026-02-28"
+  },
+  "streaks": {
+    "h_1": {
+      "current": 4,
+      "longest": 12,
+      "last_completed_at": "2026-02-28",
+      "frozen": false
+    }
+  },
+  "constraints": {
+    "supported_frequencies": [
+      "daily",
+      "weekly"
+    ],
+    "supported_entry_statuses": [
+      "completed",
+      "missed",
+      "skipped"
+    ],
+    "max_habits": 50,
+    "max_entries_per_day_per_habit": 1
   },
   "notes": "schema placeholder - final",
   "loop_002_stage1": {
@@ -32,5 +68,11 @@
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
     "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T12:05:00Z",
+    "product": "HabitPulse",
+    "worker": "worker-backend",
+    "status": "in_progress"
   }
 }
