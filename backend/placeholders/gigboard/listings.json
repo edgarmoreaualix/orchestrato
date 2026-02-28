@@ -2,5 +2,5 @@
   "product": "GigBoard",
   "listings": [{"id": "g_1", "title": "Landing page refresh", "category": "design", "location": "remote", "budget_min": 500, "budget_max": 1200, "posted_at": "2026-02-28", "status": "open"}],
   "filters": ["category", "location", "budget_min", "budget_max", "status"],
-  "notes": "listing contract placeholder - draft"
+  "notes": "listing contract placeholder - final"
 }
