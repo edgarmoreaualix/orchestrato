@@ -1,0 +1,7 @@
+{
+  "product": "LinkNest",
+  "profile": {"slug": "creator-hub", "display_name": "Creator Hub", "bio": "All my links"},
+  "links": [{"label": "Portfolio", "url": "https://example.com", "click_count": 42}],
+  "rules": {"slug_unique": true},
+  "notes": "profile contract placeholder - draft"
+}
