@@ -9,11 +9,33 @@
     {
       "label": "Portfolio",
       "url": "https://example.com",
-      "click_count": 42
+      "click_count": 42,
+      "link_id": "lnk_001",
+      "link_slug": "portfolio",
+      "position": 1,
+      "is_active": true,
+      "analytics": {
+        "click_count": 42,
+        "last_clicked_at": "2026-02-27T15:20:00Z"
+      }
     }
   ],
+  "analytics": {
+    "profile_click_count": 42,
+    "profile_unique_click_count_24h": 17,
+    "links_total": 1,
+    "links_active": 1,
+    "last_aggregated_at": "2026-02-28T12:00:00Z"
+  },
   "rules": {
-    "slug_unique": true
+    "slug_unique": true,
+    "slug_unique_scope": "global",
+    "slug_case_sensitive": false,
+    "slug_reserved_prefixes": [
+      "admin",
+      "api",
+      "help"
+    ]
   },
   "notes": "profile contract placeholder - final",
   "loop_002_stage1": {
@@ -35,5 +57,11 @@
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
     "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T12:00:00Z",
+    "product": "LinkNest",
+    "worker": "worker-backend",
+    "change": "additive-link-analytics-contract"
   }
 }
