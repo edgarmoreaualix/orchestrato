@@ -2,6 +2,18 @@
   "product": "InvoiceSnap",
   "endpoint": "/api/invoices/metadata",
   "version": "v0",
-  "fields": ["invoice_id", "client_name", "total_due", "currency", "due_date", "status"],
-  "notes": "metadata contract placeholder - final"
+  "fields": [
+    "invoice_id",
+    "client_name",
+    "total_due",
+    "currency",
+    "due_date",
+    "status"
+  ],
+  "notes": "metadata contract placeholder - final",
+  "loop_002_stage1": {
+    "at": "2026-02-28T11:38:52Z",
+    "product": "InvoiceSnap",
+    "worker": "worker-backend"
+  }
 }
