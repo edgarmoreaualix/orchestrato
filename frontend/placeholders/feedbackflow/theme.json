@@ -1,0 +1,8 @@
+{
+  "product": "FeedbackFlow",
+  "palette": {"primary": "#1f6feb", "secondary": "#0ea5e9", "surface": "#f8fafc", "text": "#0f172a"},
+  "typography": {"heading": "Poppins", "body": "Source Sans 3"},
+  "spacing": {"unit": 8},
+  "states": ["default", "hover", "focus", "disabled"],
+  "notes": "theme placeholder - draft"
+}
