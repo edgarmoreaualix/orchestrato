@@ -1,0 +1,14 @@
+{
+  "task_id": "L003-O1-QA-001",
+  "status": "done",
+  "files_changed": [
+  "tests/placeholders/invoicesnap/checklist.md",
+  "tests/placeholders/invoicesnap/contract.spec.md"
+],
+  "tests_run": [
+  "cat tests/placeholders/invoicesnap/checklist.md"
+],
+  "commit_sha": "63d7e1c8a292d250b398413fb3d8e896cd0394d8",
+  "summary": "Loop 003 completed for InvoiceSnap worker-qa.",
+  "risks": []
+}
