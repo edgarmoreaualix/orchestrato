@@ -3,5 +3,5 @@
   "endpoint": "/api/invoices/metadata",
   "version": "v0",
   "fields": ["invoice_id", "client_name", "total_due", "currency", "due_date", "status"],
-  "notes": "metadata contract placeholder - draft"
+  "notes": "metadata contract placeholder - final"
 }
