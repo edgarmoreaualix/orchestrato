@@ -1,0 +1,13 @@
+{
+  "task_id": "L002-O1-MK-001",
+  "status": "done",
+  "files_changed": [
+  "frontend/placeholders/invoicesnap/marketing.md"
+],
+  "tests_run": [
+  "wc -w frontend/placeholders/invoicesnap/marketing.md"
+],
+  "commit_sha": "0066c1e4253a204c1f777a68e9ad7cb367d5c7a3",
+  "summary": "Loop 002 completed for InvoiceSnap worker-marketing.",
+  "risks": []
+}
