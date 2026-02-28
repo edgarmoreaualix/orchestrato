@@ -1,5 +1,19 @@
 {
   "product": "GigBoard",
+  "contract_version": "v0",
+  "required_listing_fields": [
+    "id",
+    "title",
+    "category",
+    "location",
+    "budget_min",
+    "budget_max",
+    "currency",
+    "description",
+    "skills",
+    "posted_at",
+    "status"
+  ],
   "listings": [
     {
       "id": "g_1",
@@ -8,6 +22,13 @@
       "location": "remote",
       "budget_min": 500,
       "budget_max": 1200,
+      "currency": "USD",
+      "description": "Redesign a marketing landing page with mobile-first breakpoints.",
+      "skills": [
+        "figma",
+        "responsive-design",
+        "html-css"
+      ],
       "posted_at": "2026-02-28",
       "status": "open"
     }
@@ -39,5 +60,10 @@
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
     "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T12:00:00Z",
+    "product": "GigBoard",
+    "worker": "worker-backend"
   }
 }
