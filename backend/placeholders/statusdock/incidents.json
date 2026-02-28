@@ -1,6 +1,23 @@
 {
   "product": "StatusDock",
-  "incidents": [{"id": "i_1", "severity": "major", "status": "investigating", "timeline": [{"at": "2026-02-28T10:00:00Z", "event": "incident_opened"}]}],
+  "incidents": [
+    {
+      "id": "i_1",
+      "severity": "major",
+      "status": "investigating",
+      "timeline": [
+        {
+          "at": "2026-02-28T10:00:00Z",
+          "event": "incident_opened"
+        }
+      ]
+    }
+  ],
   "update_cadence_minutes": 30,
-  "notes": "incident contract placeholder - final"
+  "notes": "incident contract placeholder - final",
+  "loop_002_stage1": {
+    "at": "2026-02-28T11:38:52Z",
+    "product": "StatusDock",
+    "worker": "worker-backend"
+  }
 }
