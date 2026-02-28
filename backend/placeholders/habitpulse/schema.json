@@ -1,6 +1,21 @@
 {
   "product": "HabitPulse",
-  "habits": [{"id": "h_1", "name": "Hydrate", "frequency": "daily"}],
-  "streak": {"current": 4, "longest": 12, "last_completed_at": "2026-02-28"},
-  "notes": "schema placeholder - final"
+  "habits": [
+    {
+      "id": "h_1",
+      "name": "Hydrate",
+      "frequency": "daily"
+    }
+  ],
+  "streak": {
+    "current": 4,
+    "longest": 12,
+    "last_completed_at": "2026-02-28"
+  },
+  "notes": "schema placeholder - final",
+  "loop_002_stage1": {
+    "at": "2026-02-28T11:38:52Z",
+    "product": "HabitPulse",
+    "worker": "worker-backend"
+  }
 }
