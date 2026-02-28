@@ -7,3 +7,5 @@
 
 ## Rollback / Reliability Notes
 Keep rollback steps documented and verify recovery path before release.
+
+Last updated in loop 001 finalization.
