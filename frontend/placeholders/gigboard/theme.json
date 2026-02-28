@@ -6,6 +6,20 @@
     "surface": "#f8fafc",
     "text": "#0f172a"
   },
+  "card_palette": {
+    "card_background": "#ffffff",
+    "card_border": "#dbe4f0",
+    "card_border_hover": "#94a3b8",
+    "card_title": "#0b1220",
+    "card_meta": "#475569",
+    "card_budget": "#0f766e",
+    "card_tag_background": "#e2e8f0",
+    "card_tag_text": "#1e293b",
+    "details_panel_background": "#f8fafc",
+    "details_panel_border": "#cbd5e1",
+    "details_cta_background": "#1f6feb",
+    "details_cta_text": "#ffffff"
+  },
   "typography": {
     "heading": "Poppins",
     "body": "Source Sans 3"
@@ -38,6 +52,16 @@
   "loop_stage2": {
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
+    "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T12:00:00Z",
+    "product": "GigBoard",
+    "worker": "worker-frontend",
+    "scope": "card palette tokens"
+  },
+  "loop_004_stage2": {
+    "finalized_at": "2026-02-28T12:00:00Z",
     "status": "ready"
   }
 }
