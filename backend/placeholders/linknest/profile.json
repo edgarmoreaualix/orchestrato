@@ -24,5 +24,11 @@
   "loop_002_stage2": {
     "finalized_at": "2026-02-28T11:38:52Z",
     "status": "ready"
+  },
+  "loop_stage1": {
+    "loop": "003",
+    "at": "2026-02-28T11:46:13Z",
+    "product": "LinkNest",
+    "worker": "worker-backend"
   }
 }
