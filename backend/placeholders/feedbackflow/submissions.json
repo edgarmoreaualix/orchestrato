@@ -8,6 +8,35 @@
     "resolved",
     "closed"
   ],
+  "status_lifecycle_v2": {
+    "initial": "new",
+    "terminal": [
+      "resolved",
+      "closed"
+    ],
+    "allowed_transitions": {
+      "new": [
+        "reviewing",
+        "closed"
+      ],
+      "reviewing": [
+        "planned",
+        "closed"
+      ],
+      "planned": [
+        "in_progress",
+        "closed"
+      ],
+      "in_progress": [
+        "resolved",
+        "closed"
+      ],
+      "resolved": [
+        "closed"
+      ],
+      "closed": []
+    }
+  },
   "submissions": [
     {
       "id": "s_1",
@@ -17,7 +46,9 @@
     }
   ],
   "moderation": {
-    "requires_review": true
+    "requires_review": true,
+    "queue": "default",
+    "auto_close_rejected": true
   },
   "notes": "submission contract placeholder - final",
   "loop_002_stage1": {
@@ -38,6 +69,15 @@
   "loop_stage2": {
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
+    "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T12:58:00Z",
+    "product": "FeedbackFlow",
+    "worker": "worker-backend"
+  },
+  "loop_004_stage2": {
+    "finalized_at": "2026-02-28T12:58:00Z",
     "status": "ready"
   }
 }
