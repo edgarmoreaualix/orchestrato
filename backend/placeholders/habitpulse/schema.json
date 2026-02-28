@@ -2,5 +2,5 @@
   "product": "HabitPulse",
   "habits": [{"id": "h_1", "name": "Hydrate", "frequency": "daily"}],
   "streak": {"current": 4, "longest": 12, "last_completed_at": "2026-02-28"},
-  "notes": "schema placeholder - draft"
+  "notes": "schema placeholder - final"
 }
