@@ -7,3 +7,5 @@
 - Empty payload handling
 - Malformed payload rejection
 - Duplicate/abuse case handling
+
+Last updated in loop 001 finalization.
