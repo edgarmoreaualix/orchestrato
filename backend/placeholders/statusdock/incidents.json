@@ -1,14 +1,53 @@
 {
   "product": "StatusDock",
+  "schema_version": "2026-02-28.loop-004.v1",
+  "severity_levels": ["minor", "major", "critical"],
+  "status_values": ["investigating", "identified", "monitoring", "resolved"],
   "incidents": [
     {
       "id": "i_1",
       "severity": "major",
       "status": "investigating",
+      "started_at": "2026-02-28T10:00:00Z",
       "timeline": [
         {
           "at": "2026-02-28T10:00:00Z",
-          "event": "incident_opened"
+          "event": "incident_opened",
+          "status": "investigating",
+          "message": "Latency increase detected for API reads."
+        },
+        {
+          "at": "2026-02-28T10:22:00Z",
+          "event": "investigation_update",
+          "status": "investigating",
+          "message": "Mitigation in progress for affected cluster."
+        }
+      ]
+    },
+    {
+      "id": "i_2",
+      "severity": "minor",
+      "status": "monitoring",
+      "started_at": "2026-02-28T08:30:00Z",
+      "resolved_at": "2026-02-28T09:20:00Z",
+      "timeline": [
+        {
+          "at": "2026-02-28T08:30:00Z",
+          "event": "incident_opened",
+          "status": "investigating",
+          "message": "Intermittent delays in webhook delivery."
+        },
+        {
+          "at": "2026-02-28T08:52:00Z",
+          "event": "issue_identified",
+          "status": "identified",
+          "message": "Queued retries saturated one worker shard."
+        },
+        {
+          "at": "2026-02-28T09:10:00Z",
+          "event": "mitigation_applied",
+          "status": "monitoring",
+          "message": "Traffic redistributed and queue depth recovered."
         }
       ]
     }
@@ -33,6 +72,17 @@
   "loop_stage2": {
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
+    "status": "ready"
+  },
+  "loop_004_stage1": {
+    "loop": "004",
+    "at": "2026-02-28T12:55:00Z",
+    "product": "StatusDock",
+    "worker": "worker-backend"
+  },
+  "loop_004_stage2": {
+    "loop": "004",
+    "finalized_at": "2026-02-28T12:55:00Z",
     "status": "ready"
   }
 }
