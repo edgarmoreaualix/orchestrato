@@ -57,3 +57,13 @@ Last updated in loop 001 finalization.
 - Inputs reviewed: prior-week SLA report, open corrective actions, incident postmortems, maintenance calendar
 - Outputs recorded: SLA pass/fail by KPI, owner-assigned remediations, due dates, escalation notes
 
+
+## Loop 004 Stage 3
+- Added execution guardrails to keep reviews actionable and owner-accountable without changing existing schema.
+- Updated: 2026-03-01T00:15:00Z
+
+### Accountability Execution Rules
+- Any SLA miss must have one directly responsible owner and one supporting owner assigned in the same weekly review.
+- Corrective actions must include an explicit due date and a measurable completion check.
+- Overdue actions are escalated to Product Manager and Service Owner in the next review cycle.
+- Repeated misses on the same KPI for two consecutive weeks trigger a mitigation plan entry.
