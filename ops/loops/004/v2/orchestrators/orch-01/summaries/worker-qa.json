@@ -1,0 +1,19 @@
+{
+  "task_id": "L004-O1-QA-001",
+  "status": "done",
+  "files_changed": [
+    "tests/placeholders/invoicesnap/checklist.md",
+    "tests/placeholders/invoicesnap/contract.spec.md",
+    "ops/loops/004/v2/orchestrators/orch-01/summaries/worker-qa.json"
+  ],
+  "tests_run": [
+    "cat tests/placeholders/invoicesnap/checklist.md",
+    "cat tests/placeholders/invoicesnap/contract.spec.md"
+  ],
+  "commit_sha": "b41339d7abf6eae32dbb4e1efa151f549f7e17f6",
+  "summary": "Finalized additive Loop 004 QA placeholder coverage for InvoiceSnap with a happy path and two edge cases in the checklist, plus expected contract keys for invoice payload validation, while preserving backward compatibility with prior loops.",
+  "risks": [
+    "Checks remain documentation-only placeholders; no automated runtime assertions execute these scenarios yet.",
+    "Future contract drift in backend/frontend artifacts may not be caught until executable tests are added."
+  ]
+}
