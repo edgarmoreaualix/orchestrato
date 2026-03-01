@@ -60,3 +60,8 @@ Last updated in loop 001 finalization.
 ## Loop 004 Stage 2
 - Finalized placeholder updates for HabitPulse (worker-sentinel) with additive compatibility notes.
 - Updated: 2026-02-28T11:53:37Z
+
+## Loop 004 Stage 3
+- Revalidated input hardening examples against additive loop 2/3 compatibility constraints.
+- Confirmed required-field and enum guidance remains explicit and non-breaking for existing docs consumers.
+- Updated: 2026-03-01T15:00:00Z
