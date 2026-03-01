@@ -1,0 +1,17 @@
+{
+  "task_id": "L004-O6-BE-001",
+  "status": "done",
+  "files_changed": [
+    "backend/placeholders/statusdock/incidents.json",
+    "backend/placeholders/statusdock/README.md"
+  ],
+  "tests_run": [
+    "cat backend/placeholders/statusdock/incidents.json"
+  ],
+  "commit_sha": "ebef570616ec561011a4f0c5d3111c2e8d5f5e31",
+  "summary": "Finalized Loop 004 StatusDock backend placeholder contract with additive optional incident/timeline metadata and stable required keys; documented final cadence and compatibility notes in README across loop stage 4.",
+  "risks": [
+    "Optional metadata enums (impact_scope, communication_channel) are placeholders and may need normalization once production API contracts are locked.",
+    "Timeline actor/component semantics are descriptive only and could diverge from operational incident tooling taxonomy."
+  ]
+}
