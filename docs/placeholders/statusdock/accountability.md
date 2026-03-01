@@ -32,3 +32,28 @@ Last updated in loop 001 finalization.
 ## Loop 003 Stage 2
 - Finalized placeholder updates for StatusDock (worker-accountability).
 - Updated: 2026-02-28T11:46:13Z
+
+## Loop 004 Stage 1
+- Product: StatusDock
+- Worker: worker-accountability
+- Updated: 2026-02-28T12:55:00Z
+
+### SLA KPI Ownership Matrix
+| SLA KPI | Target | Primary Owner | Secondary Owner | Reporting Source |
+| --- | --- | --- | --- | --- |
+| API uptime (monthly) | >= 99.95% | SRE Lead | Platform Engineer | Uptime monitor dashboard |
+| Incident acknowledgement (P1) | <= 10 minutes | On-call Engineer | Incident Commander | Incident timeline log |
+| Incident resolution (P1) | <= 60 minutes | Incident Commander | Service Owner | Incident postmortem record |
+| Status page freshness | <= 5 minutes lag | Support Lead | On-call Engineer | Status event stream |
+| Planned maintenance notice lead time | >= 72 hours | Release Manager | Product Manager | Change calendar |
+
+## Loop 004 Stage 2
+- Finalized SLA KPI accountability baseline for StatusDock with primary and backup ownership retained for all tracked SLAs.
+- Updated: 2026-03-01T00:00:00Z
+
+### Weekly SLA Review Cadence
+- Meeting window: Every Tuesday at 15:00 UTC (30 minutes)
+- Required attendees: SRE Lead, Incident Commander, Support Lead, Release Manager
+- Inputs reviewed: prior-week SLA report, open corrective actions, incident postmortems, maintenance calendar
+- Outputs recorded: SLA pass/fail by KPI, owner-assigned remediations, due dates, escalation notes
+
