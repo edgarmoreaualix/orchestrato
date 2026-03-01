@@ -77,3 +77,12 @@ Use this version when teams need risk visibility while preserving the original t
 - Finalized additive KPI accountability updates for LinkNest (worker-accountability).
 - Confirmed backward compatibility by retaining original KPI fields and weekly template.
 - Updated: 2026-03-01T00:00:00Z
+
+### Weekly Cadence SLA (Additive)
+Use these due-date checkpoints to enforce ownership before each weekly review.
+
+| checkpoint | owner | due_date_rule | output |
+| --- | --- | --- | --- |
+| KPI data refresh | metric owner | Friday EOD (local) before review week | `actual`, `variance`, and `status` updated |
+| Risk triage | backup owner | Monday 09:00 (local) review day | `off_track` KPIs tagged with blocker and corrective action |
+| Escalation handoff | escalation_contact | Monday 12:00 (local) if risk persists | escalation note with dated next check-in |
