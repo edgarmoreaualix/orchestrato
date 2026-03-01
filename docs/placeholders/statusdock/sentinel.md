@@ -59,3 +59,8 @@ Last updated in loop 001 finalization.
 ## Loop 004 Stage 3
 - Added reliability and cleanup checklist notes without removing prior loop content.
 - Updated: 2026-02-28T12:58:00Z
+
+## Loop 004 Stage 4
+- Executed worker-sentinel loop update with additive compatibility preserved.
+- Confirmed incident cadence and reliability checkpoints remain present after cleanup additions.
+- Updated: 2026-03-01T06:46:40Z
