@@ -32,7 +32,12 @@
       "status.degraded",
       "status.outage",
       "status.maintenance",
-      "status.unknown"
+      "status.unknown",
+      "status.banner.bg",
+      "status.banner.fg",
+      "status.timeline.ok",
+      "status.timeline.warn",
+      "status.timeline.critical"
     ],
     "state_badges": {
       "operational": {
@@ -49,6 +54,34 @@
         "bg": "#fee2e2",
         "fg": "#991b1b",
         "border": "#fca5a5"
+      }
+    },
+    "state_panels": {
+      "operational": {
+        "bg": "#f0fdf4",
+        "fg": "#14532d",
+        "border": "#86efac"
+      },
+      "degraded": {
+        "bg": "#fffbeb",
+        "fg": "#78350f",
+        "border": "#fcd34d"
+      },
+      "outage": {
+        "bg": "#fef2f2",
+        "fg": "#7f1d1d",
+        "border": "#fca5a5"
+      }
+    },
+    "component_tokens": {
+      "banner": {
+        "bg": "#0f172a",
+        "fg": "#f8fafc"
+      },
+      "timeline": {
+        "ok": "#22c55e",
+        "warn": "#f59e0b",
+        "critical": "#ef4444"
       }
     },
     "contrast_target": "WCAG AA",
@@ -83,5 +116,10 @@
   "loop_004_stage2": {
     "finalized_at": "2026-03-01T06:46:56Z",
     "status": "ready"
+  },
+  "loop_004_stage3": {
+    "finalized_at": "2026-03-01T07:08:00Z",
+    "status": "ready",
+    "notes": "Added additive banner/timeline tokens for status page placeholders."
   }
 }
