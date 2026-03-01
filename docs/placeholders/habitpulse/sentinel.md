@@ -40,3 +40,23 @@ Last updated in loop 001 finalization.
 - Reject unknown enum values and add explicit allowed examples (`done`, `skipped`, `missed`).
 - Add max-length guidance for free-text notes to avoid unbounded placeholder inputs.
 - Ensure invalid payload examples include expected error shape (`code`, `message`, `field`).
+
+## Dependency Pruning Checklist (Loop 004)
+- Inventory placeholder-only tooling and mark runtime-critical vs optional dependencies.
+- Remove unused placeholder scripts from onboarding docs once replacements are available.
+- Validate lockfile entries map to actively referenced packages in `docs/` workflows.
+- Flag duplicate utilities across placeholders and consolidate to one maintained path.
+- Record deprecation windows before removing any compatibility shim references.
+- Confirm rollback notes include a dependency re-pin path for emergency restores.
+
+## Cleanup Checklist (Loop 004)
+- Remove stale placeholder examples only after replacement examples are published in the same document section.
+- Keep iteration 2 compatibility aliases active while iteration 4 notes are rolled out.
+- Keep iteration 3 payload examples unchanged; add new examples as additive blocks only.
+- Mark every removed placeholder reference with the replacement path and migration date.
+- Verify links from `docs/placeholders/habitpulse/*.md` still resolve after cleanup edits.
+- Re-run sentinel checklist after each cleanup PR to prevent silent drift.
+
+## Loop 004 Stage 2
+- Finalized placeholder updates for HabitPulse (worker-sentinel) with additive compatibility notes.
+- Updated: 2026-02-28T11:53:37Z
