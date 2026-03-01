@@ -10,6 +10,16 @@ Keep rollback steps documented and verify recovery path before release.
 
 Last updated in loop 001 finalization.
 
+## Anti-Spam Checks (Loop 004)
+- Enforce create-job and apply-rate limits per IP and per account with shared thresholds.
+- Add a hidden honeypot field to placeholder forms and drop requests when populated.
+- Block disposable-email domains for employer and freelancer signup samples.
+- Detect duplicate job posts using title and body fingerprinting in a rolling time window.
+- Flag burst submissions with repeated contact handles, URLs, or phone numbers for review.
+- Require basic text normalization before duplicate detection (trim, lowercase, whitespace collapse).
+- Add URL allowlist checks for job descriptions and reject known redirect-shortener abuse patterns.
+- Record anti-spam decision reasons in audit logs for review and false-positive tuning.
+
 ## Loop 002 Stage 1
 - Product: GigBoard
 - Worker: worker-sentinel
