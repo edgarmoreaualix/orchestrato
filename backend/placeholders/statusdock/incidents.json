@@ -1,12 +1,19 @@
 {
   "product": "StatusDock",
-  "schema_version": "2026-02-28.loop-004.v1",
+  "schema_version": "2026-03-01.loop-004.v2",
   "severity_levels": ["minor", "major", "critical"],
   "status_values": ["investigating", "identified", "monitoring", "resolved"],
   "incident_status_update_contract": {
-    "version": "v2.additive",
+    "version": "v2.1.additive",
     "required_incident_fields": ["id", "severity", "status", "started_at", "timeline"],
     "required_timeline_fields": ["at", "event", "status", "message"],
+    "optional_incident_fields": [
+      "title",
+      "affected_components",
+      "impact_scope",
+      "communication_channel"
+    ],
+    "optional_timeline_fields": ["actor", "component", "public"],
     "cadence": {
       "baseline_minutes": 30,
       "urgent_minutes": 10,
@@ -16,58 +23,84 @@
   "incidents": [
     {
       "id": "i_1",
+      "title": "Elevated API read latency",
       "severity": "major",
       "status": "investigating",
       "started_at": "2026-02-28T10:00:00Z",
       "last_updated_at": "2026-02-28T10:22:00Z",
       "next_update_due_at": "2026-02-28T10:52:00Z",
+      "affected_components": ["api-read", "us-east-1"],
+      "impact_scope": "partial",
+      "communication_channel": "status-page",
       "timeline": [
         {
           "at": "2026-02-28T10:00:00Z",
           "event": "incident_opened",
           "status": "investigating",
-          "message": "Latency increase detected for API reads."
+          "message": "Latency increase detected for API reads.",
+          "actor": "system-detector",
+          "component": "api-read",
+          "public": true
         },
         {
           "at": "2026-02-28T10:22:00Z",
           "event": "investigation_update",
           "status": "investigating",
-          "message": "Mitigation in progress for affected cluster."
+          "message": "Mitigation in progress for affected cluster.",
+          "actor": "oncall-backend",
+          "component": "us-east-1",
+          "public": true
         }
       ]
     },
     {
       "id": "i_2",
+      "title": "Intermittent webhook delays",
       "severity": "minor",
       "status": "monitoring",
       "started_at": "2026-02-28T08:30:00Z",
       "resolved_at": "2026-02-28T09:20:00Z",
       "last_updated_at": "2026-02-28T09:20:00Z",
       "next_update_due_at": null,
+      "affected_components": ["webhooks", "worker-shard-3"],
+      "impact_scope": "degraded",
+      "communication_channel": "status-page",
       "timeline": [
         {
           "at": "2026-02-28T08:30:00Z",
           "event": "incident_opened",
           "status": "investigating",
-          "message": "Intermittent delays in webhook delivery."
+          "message": "Intermittent delays in webhook delivery.",
+          "actor": "system-detector",
+          "component": "webhooks",
+          "public": true
         },
         {
           "at": "2026-02-28T08:52:00Z",
           "event": "issue_identified",
           "status": "identified",
-          "message": "Queued retries saturated one worker shard."
+          "message": "Queued retries saturated one worker shard.",
+          "actor": "oncall-backend",
+          "component": "worker-shard-3",
+          "public": true
         },
         {
           "at": "2026-02-28T09:10:00Z",
           "event": "mitigation_applied",
           "status": "monitoring",
-          "message": "Traffic redistributed and queue depth recovered."
+          "message": "Traffic redistributed and queue depth recovered.",
+          "actor": "oncall-backend",
+          "component": "queue-router",
+          "public": true
         },
         {
           "at": "2026-02-28T09:20:00Z",
           "event": "resolution_confirmed",
           "status": "resolved",
-          "message": "No new webhook delay alerts in the validation window."
+          "message": "No new webhook delay alerts in the validation window.",
+          "actor": "incident-commander",
+          "component": "webhooks",
+          "public": true
         }
       ]
     }
@@ -110,5 +143,12 @@
     "finalized_at": "2026-03-01T00:00:00Z",
     "status": "ready",
     "change_type": "additive"
+  },
+  "loop_004_stage4": {
+    "loop": "004",
+    "finalized_at": "2026-03-01T18:00:00Z",
+    "status": "ready",
+    "change_type": "additive",
+    "notes": "Added optional incident and timeline metadata fields with no breaking removals."
   }
 }
