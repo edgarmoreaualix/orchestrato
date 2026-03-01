@@ -67,3 +67,13 @@ Last updated in loop 001 finalization.
 - Corrective actions must include an explicit due date and a measurable completion check.
 - Overdue actions are escalated to Product Manager and Service Owner in the next review cycle.
 - Repeated misses on the same KPI for two consecutive weeks trigger a mitigation plan entry.
+
+## Loop 004 Stage 4
+- Finalized operational handoff criteria for SLA accountability records while preserving prior template fields and cadence.
+- Updated: 2026-03-01T00:30:00Z
+
+### SLA Exception Closure Checklist
+- Exception ticket includes impacted KPI, breach window, and customer impact summary.
+- Primary owner confirms remediation evidence before closure.
+- Secondary owner verifies monitoring recovery for one full review cycle.
+- Weekly review notes capture closure decision and any follow-up action owners.
