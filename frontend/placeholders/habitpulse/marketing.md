@@ -5,10 +5,10 @@ Show up today. Keep your streak tomorrow.
 HabitPulse turns quick daily check-ins into visible momentum for people and teams.
 
 ## Call To Action
-Start a 7-day HabitPulse sprint and log your first habit in under 2 minutes.
+Start a 7-day HabitPulse sprint, log your first habit in under 2 minutes, and build proof of progress by day one.
 
 ## Trust Proof
-Timestamped check-ins and streak history make progress easy to verify, so wins are visible and missed days are caught early.
+Timestamped check-ins and streak history make consistency easy to verify, so wins are visible and missed days are spotted early.
 
 ## Loop 002 Compatibility
 - Preserved concise placeholder structure and motivation-first positioning.
@@ -18,4 +18,7 @@ Timestamped check-ins and streak history make progress easy to verify, so wins a
 
 ## Loop 004 Stage 1
 - Reworked placeholder copy into focused hero + CTA + trust proof.
+
+## Loop 004 Stage 2
+- Tightened CTA and trust-proof language while keeping loop-2/loop-3 compatibility notes.
 - Updated: 2026-03-01T00:00:00Z
