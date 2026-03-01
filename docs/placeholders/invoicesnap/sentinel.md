@@ -27,3 +27,24 @@ Last updated in loop 001 finalization.
 ## Loop 003 Stage 2
 - Finalized placeholder updates for InvoiceSnap (worker-sentinel).
 - Updated: 2026-02-28T11:46:13Z
+
+## Loop 004 Stage 1
+- Product: InvoiceSnap
+- Worker: worker-sentinel
+- Updated: 2026-02-28T12:55:00Z
+
+### Cleanup and Security Checklist (Additive)
+- Dead code scan: run `rg -n "TODO|FIXME|legacy|deprecated" docs/placeholders/invoicesnap` and remove stale placeholder snippets not referenced by docs.
+- Dead file sweep: run `rg --files docs/placeholders/invoicesnap` and confirm every file is listed in InvoiceSnap placeholder index docs before merge.
+- Secret scanning: run `rg -n "(AKIA|BEGIN PRIVATE KEY|SECRET|TOKEN|PASSWORD|api[_-]?key)" docs/placeholders/invoicesnap` and block merge if any hardcoded credential-like values are present.
+- Secret policy verification: ensure any sample credentials stay redacted as `***REDACTED***` and never use production-like token formats.
+
+## Loop 004 Stage 2
+- Finalized placeholder updates for InvoiceSnap (worker-sentinel).
+- Updated: 2026-03-01T00:00:00Z
+
+### Loop 004 Sentinel Execution Steps (Additive)
+1. Run dead code scan command and review each match for placeholder relevance.
+2. Run dead file sweep and verify each file maps to an active placeholder doc index entry.
+3. Run secret scan command and fail the change if credential-like literals are detected.
+4. Re-run scans after any cleanup edits to confirm no regressions before merge.
