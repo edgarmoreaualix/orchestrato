@@ -1,0 +1,16 @@
+{
+  "task_id": "L004-O1-SE-001",
+  "status": "done",
+  "files_changed": [
+    "docs/placeholders/invoicesnap/sentinel.md",
+    "ops/loops/004/v2/orchestrators/orch-01/tasks/worker-sentinel.md"
+  ],
+  "tests_run": [
+    "cat docs/placeholders/invoicesnap/sentinel.md"
+  ],
+  "commit_sha": "11b56cfa1332076fdf4f92dbbc31ced7bfd82d4d",
+  "summary": "Finalized the Loop 004 InvoiceSnap sentinel task by extending the checklist additively with Stage 3/4 operations cadence while preserving rollback guidance and prior loop compatibility, then marked the task file complete.",
+  "risks": [
+    "Checklist updates are documentation-only until corresponding CI guardrails and runtime enforcement are wired."
+  ]
+}
