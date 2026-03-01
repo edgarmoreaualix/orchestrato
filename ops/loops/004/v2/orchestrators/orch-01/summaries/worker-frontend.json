@@ -1,0 +1,14 @@
+{
+  "task_id": "L004-O1-FE-001",
+  "status": "done",
+  "files_changed": [
+    "frontend/placeholders/invoicesnap/theme.json",
+    "frontend/placeholders/invoicesnap/PREVIEW.md"
+  ],
+  "tests_run": [
+    "cat frontend/placeholders/invoicesnap/theme.json"
+  ],
+  "commit_sha": "2ea474351c3f89e15e15938de6984605cf838588",
+  "summary": "Finalized Loop 004 frontend placeholder web view docs for InvoiceSnap and confirmed additive compatibility with existing theme tokens and prior loop entries.",
+  "risks": []
+}
