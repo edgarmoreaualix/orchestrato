@@ -63,3 +63,23 @@ Last updated in loop 001 finalization.
 - Operational safeguards:
   - Keep existing blocklist allowlist semantics unchanged.
   - Log every automated action with rule ID and execution timestamp.
+
+## Loop 004 Stage 3
+- Compatibility objective: extend review and enforcement cadence without changing existing pass/fail semantics.
+
+### Ongoing Sentinel Operations (Additive)
+- Spam link checks:
+  - Re-check quarantined links every 12h and auto-expire quarantine after manual allow decision.
+  - Require moderator approval for links from newly observed high-risk TLD clusters.
+  - Alert on sudden domain fan-out spikes from a single profile within 1h.
+- Dead content removal checks:
+  - Run daily health probes for active links and weekly deep checks for archived links.
+  - Route repeated soft-fail links (429/503) to retry queue before dead-link removal path.
+  - Add owner notification event before final dead-link deactivation.
+- Audit + recovery:
+  - Keep 30-day tombstone record for removed links to support undo and incident review.
+  - Include actor (automation or reviewer) in all removal and restoration logs.
+
+## Loop 004 Stage 4
+- Finalized additive sentinel expansion for LinkNest placeholder abuse prevention and dead content cleanup.
+- Updated: 2026-03-01T00:00:00Z
