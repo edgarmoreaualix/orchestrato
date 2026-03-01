@@ -1,0 +1,19 @@
+{
+  "task_id": "L004-O3-LW-001",
+  "status": "done",
+  "files_changed": [
+    "docs/placeholders/gigboard/legal.md",
+    "ops/loops/004/v2/orchestrators/orch-03/tasks/worker-lawyer.md"
+  ],
+  "tests_run": [
+    {
+      "command": "wc -w docs/placeholders/gigboard/legal.md",
+      "result": "pass (249 words)"
+    }
+  ],
+  "commit_sha": "d5cd8d4fc93bedd02bdfe7ebde82d53bd8e129cd",
+  "summary": "Finalized Loop 004 orch-03 lawyer task for GigBoard with concise terms, prohibited content, and takedown placeholders under 250 words, preserving additive backward-compatible updates through Stage 3.",
+  "risks": [
+    "Policy text is placeholder guidance and may require legal counsel review before production use."
+  ]
+}
