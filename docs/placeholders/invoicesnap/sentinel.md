@@ -7,6 +7,8 @@
 
 ## Rollback / Reliability Notes
 Keep rollback steps documented and verify recovery path before release.
+- Roll back by restoring the last known-good placeholder commit, then re-run dead code and secret scans before re-attempting merge.
+- Store the rollback commit SHA in release notes so recovery can be executed without branch history lookup.
 
 Last updated in loop 001 finalization.
 
@@ -48,3 +50,9 @@ Last updated in loop 001 finalization.
 2. Run dead file sweep and verify each file maps to an active placeholder doc index entry.
 3. Run secret scan command and fail the change if credential-like literals are detected.
 4. Re-run scans after any cleanup edits to confirm no regressions before merge.
+
+### Rollback Drill (Loop 004 Additive)
+1. Capture current candidate commit SHA and previous known-good SHA before merge.
+2. If post-merge validation fails, reset placeholder docs to known-good SHA and notify release owner.
+3. Re-run `rg -n "TODO|FIXME|legacy|deprecated" docs/placeholders/invoicesnap` after rollback to confirm baseline integrity.
+4. Re-run `rg -n "(AKIA|BEGIN PRIVATE KEY|SECRET|TOKEN|PASSWORD|api[_-]?key)" docs/placeholders/invoicesnap` and document the clean result in release notes.
