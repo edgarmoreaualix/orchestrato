@@ -1,0 +1,19 @@
+{
+  "task_id": "L004-O6-QA-001",
+  "status": "done",
+  "files_changed": [
+    "tests/placeholders/statusdock/checklist.md",
+    "tests/placeholders/statusdock/contract.spec.md"
+  ],
+  "tests_run": [
+    {
+      "command": "cat tests/placeholders/statusdock/checklist.md",
+      "result": "pass"
+    }
+  ],
+  "commit_sha": "933a8e7",
+  "summary": "Expanded Loop 004 StatusDock QA coverage with incident lifecycle and contract coverage checks, and documented additive incident/service contract keys and validation constraints for outage and recovery placeholders.",
+  "risks": [
+    "Validation was documentation-level (`cat`) and did not execute automated tests beyond checklist/contract review."
+  ]
+}
