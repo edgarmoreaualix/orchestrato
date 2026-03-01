@@ -1,0 +1,17 @@
+{
+  "task_id": "L004-O6-AC-001",
+  "status": "done",
+  "files_changed": [
+    "docs/placeholders/statusdock/accountability.md",
+    "ops/loops/004/v2/orchestrators/orch-06/summaries/worker-accountability.json"
+  ],
+  "tests_run": [
+    "cat docs/placeholders/statusdock/accountability.md"
+  ],
+  "commit_sha": "0625bfea4fbf8784a6be44e3b6ff142a38ce0ebf",
+  "summary": "Finalized Loop 004 StatusDock accountability placeholder with additive Stage 4 SLA exception closure checklist and preserved backward-compatible KPI ownership and weekly review cadence structure.",
+  "risks": [
+    "Owner role titles are placeholders and may need mapping to actual team roster.",
+    "Review time is fixed in UTC and may require local scheduling policy alignment."
+  ]
+}
