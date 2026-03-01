@@ -130,5 +130,41 @@
       "press_scale": 0.99,
       "hover_shadow": "0 6px 18px rgba(15, 23, 42, 0.12)"
     }
+  },
+  "loop_004_stage4": {
+    "at": "2026-03-01T08:11:00Z",
+    "product": "LinkNest",
+    "worker": "worker-frontend",
+    "compatibility": {
+      "backward_compatible_with": [
+        "loop_004_stage1",
+        "loop_004_stage3"
+      ],
+      "token_changes": "additive_only"
+    },
+    "profile_tokens": {
+      "avatar_ring_width": {
+        "mobile": 2,
+        "desktop": 3
+      },
+      "username_font_size": {
+        "mobile": 26,
+        "desktop": 30
+      }
+    },
+    "link_tokens": {
+      "card_corner_radius": {
+        "mobile": 14,
+        "desktop": 16
+      },
+      "card_gap": {
+        "mobile": 10,
+        "desktop": 12
+      },
+      "icon_size": {
+        "mobile": 18,
+        "desktop": 20
+      }
+    }
   }
 }
