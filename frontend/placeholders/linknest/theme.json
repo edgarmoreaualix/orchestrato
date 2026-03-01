@@ -39,5 +39,96 @@
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
     "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T11:53:39Z",
+    "product": "LinkNest",
+    "worker": "worker-frontend",
+    "profile_styles": {
+      "avatar": {
+        "size": {
+          "mobile": 84,
+          "desktop": 112
+        },
+        "shape": "circle",
+        "ring_color": "#1f6feb"
+      },
+      "name": {
+        "font_family": "Poppins",
+        "font_weight": 700,
+        "letter_spacing": 0.2
+      },
+      "bio": {
+        "font_family": "Source Sans 3",
+        "max_chars_mobile": 120,
+        "max_chars_desktop": 180,
+        "line_clamp_mobile": 3,
+        "line_clamp_desktop": 4
+      }
+    },
+    "link_styles": {
+      "card": {
+        "min_height": {
+          "mobile": 52,
+          "desktop": 56
+        },
+        "border_radius": 14,
+        "background": "#ffffff",
+        "border_color": "#e2e8f0"
+      },
+      "label": {
+        "font_family": "Source Sans 3",
+        "font_weight": 600
+      },
+      "interaction": {
+        "hover_translate_y": -1,
+        "focus_ring": "#0ea5e9",
+        "disabled_opacity": 0.55
+      }
+    }
+  },
+  "loop_004_stage2": {
+    "finalized_at": "2026-02-28T11:53:39Z",
+    "status": "ready"
+  },
+  "loop_004_stage3": {
+    "at": "2026-03-01T06:46:44Z",
+    "product": "LinkNest",
+    "worker": "worker-frontend",
+    "profile_layout": {
+      "container_max_width": {
+        "mobile": 480,
+        "desktop": 720
+      },
+      "header_spacing": {
+        "mobile": 16,
+        "desktop": 24
+      },
+      "alignment": {
+        "mobile": "center",
+        "desktop": "center"
+      }
+    },
+    "profile_accessibility": {
+      "name_min_contrast_ratio": 7,
+      "bio_min_contrast_ratio": 4.5,
+      "focus_outline_width": 2
+    },
+    "link_list_layout": {
+      "stack_gap": {
+        "mobile": 10,
+        "desktop": 12
+      },
+      "horizontal_padding": {
+        "mobile": 14,
+        "desktop": 18
+      },
+      "icon_slot_width": 20
+    },
+    "link_interaction_notes": {
+      "tap_target_min_height": 44,
+      "press_scale": 0.99,
+      "hover_shadow": "0 6px 18px rgba(15, 23, 42, 0.12)"
+    }
   }
 }
