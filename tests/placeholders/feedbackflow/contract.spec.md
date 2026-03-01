@@ -37,3 +37,6 @@ Last updated in loop 001 finalization.
 ## Loop 004 Stage 2
 - Finalized placeholder contract key documentation for lifecycle and vote abuse edge cases.
 - Updated: 2026-03-01T06:49:38Z
+
+Compatibility note:
+- Existing placeholder fixtures that only include baseline required keys remain valid.

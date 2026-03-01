@@ -50,3 +50,7 @@ Last updated in loop 001 finalization.
 ## Loop 004 Stage 3
 - Re-validated lifecycle and abuse checks against placeholder contract keys for additive compatibility.
 - Updated: 2026-03-01T06:49:38Z
+
+### Contract Key Assertions
+- Lifecycle placeholders continue to require baseline keys: `id`, `status`, `created_at`, `updated_at`, `metadata`.
+- Additive keys under `metadata.*` remain optional for backward-compatible placeholder fixtures.
