@@ -65,3 +65,8 @@ Last updated in loop 001 finalization.
 - Revalidated input hardening examples against additive loop 2/3 compatibility constraints.
 - Confirmed required-field and enum guidance remains explicit and non-breaking for existing docs consumers.
 - Updated: 2026-03-01T15:00:00Z
+
+## Loop 004 Stage 4
+- Added dependency-pruning execution notes for placeholder-only tooling to prevent drift.
+- Logged rollback expectation: keep re-pin guidance present until runtime validation replaces placeholders.
+- Updated: 2026-03-01T15:08:00Z
