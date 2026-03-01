@@ -42,3 +42,15 @@ Last updated in loop 001 finalization.
 - Worker: worker-qa
 - Added explicit listing edge-case QA checks for empty and malformed payloads.
 - Updated: 2026-02-28T12:00:00Z
+
+## Loop 004 Stage 2
+- Product: GigBoard
+- Worker: worker-qa
+- Iteration 2 compatibility: existing envelope keys remain valid; empty `listings` stays accepted.
+- Iteration 3 compatibility: existing malformed payload guards remain unchanged and additive.
+- Added concrete malformed samples to verify:
+  - `{}` (missing `listings`)
+  - `{ "listings": {} }` (`listings` not array)
+  - `{ "listings": ["bad"] }` (non-object entry)
+  - `{ "listings": [{ "listing_id": "x" }] }` (missing required listing keys)
+- Updated: 2026-03-01T00:00:00Z
