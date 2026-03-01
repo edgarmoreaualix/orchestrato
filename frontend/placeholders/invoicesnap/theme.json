@@ -39,5 +39,89 @@
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
     "status": "ready"
+  },
+  "web_view": {
+    "background": "#f1f5f9",
+    "card": "#ffffff",
+    "accent": "#1d4ed8",
+    "muted_text": "#475569",
+    "success": "#16a34a",
+    "danger": "#dc2626"
+  },
+  "typography_scale": {
+    "hero": "700 34px/1.1 Poppins",
+    "title": "600 24px/1.2 Poppins",
+    "section": "600 18px/1.3 Poppins",
+    "body": "400 16px/1.5 Source Sans 3",
+    "meta": "400 14px/1.4 Source Sans 3"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T12:55:00Z",
+    "product": "InvoiceSnap",
+    "worker": "worker-frontend",
+    "notes": "Added web placeholder theme tokens for dashboard card, status colors, and type scale."
+  },
+  "loop_004_stage2": {
+    "finalized_at": "2026-02-28T12:55:00Z",
+    "status": "ready"
+  },
+  "web_placeholder": {
+    "layout": {
+      "page_max_width": 1120,
+      "gutter": 24,
+      "card_radius": 14,
+      "card_shadow": "0 16px 40px rgba(15, 23, 42, 0.08)"
+    },
+    "surface_scale": {
+      "base": "#f8fafc",
+      "raised": "#ffffff",
+      "subtle": "#e2e8f0",
+      "inverse": "#0f172a"
+    },
+    "status": {
+      "draft": "#475569",
+      "sent": "#2563eb",
+      "paid": "#16a34a",
+      "overdue": "#dc2626"
+    },
+    "components": {
+      "header_bar": {
+        "background": "#ffffff",
+        "border": "#e2e8f0"
+      },
+      "invoice_card": {
+        "background": "#ffffff",
+        "border": "#e2e8f0",
+        "title": "#0f172a",
+        "meta": "#475569"
+      },
+      "primary_cta": {
+        "background": "#1d4ed8",
+        "text": "#ffffff",
+        "hover": "#1e40af",
+        "focus_ring": "#93c5fd"
+      },
+      "secondary_cta": {
+        "background": "#e2e8f0",
+        "text": "#0f172a",
+        "hover": "#cbd5e1"
+      },
+      "table": {
+        "row_border": "#e2e8f0",
+        "header_text": "#334155",
+        "body_text": "#0f172a"
+      }
+    },
+    "copy_tone": {
+      "voice": "clear, concise, freelancer-friendly",
+      "headline_pattern": "Action + financial outcome",
+      "cta_pattern": "Verb-first and confidence-building"
+    }
+  },
+  "loop_004_stage3": {
+    "at": "2026-03-01T00:00:00Z",
+    "product": "InvoiceSnap",
+    "worker": "worker-frontend",
+    "notes": "Extended placeholder theme with reusable web-view layout, status, and component tokens while preserving prior keys."
   }
 }
