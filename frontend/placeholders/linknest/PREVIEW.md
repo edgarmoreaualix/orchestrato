@@ -26,3 +26,13 @@ Last updated in loop 001 finalization.
   - Link list uses 12px vertical gap and 18px horizontal card padding.
   - Hover state adds lift plus shadow while focus ring remains visible for keyboard users.
 - Updated: 2026-03-01T06:46:44Z
+
+## Loop 004 Stage 4
+- Final additive token pass keeps previous loop keys untouched and introduces profile/link refinement tokens.
+- Mobile behavior:
+  - Username size targets 26px with a 2px avatar ring and unchanged centered alignment.
+  - Link cards keep a 10px stack gap, 14px rounding baseline, and 18px icon slot fit.
+- Desktop behavior:
+  - Username size scales to 30px with a 3px avatar ring for stronger profile hierarchy.
+  - Link cards use 16px corner radius, 12px stack gap, and 20px icon sizing for scanability.
+- Updated: 2026-03-01T08:11:00Z
