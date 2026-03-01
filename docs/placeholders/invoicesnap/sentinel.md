@@ -56,3 +56,16 @@ Last updated in loop 001 finalization.
 2. If post-merge validation fails, reset placeholder docs to known-good SHA and notify release owner.
 3. Re-run `rg -n "TODO|FIXME|legacy|deprecated" docs/placeholders/invoicesnap` after rollback to confirm baseline integrity.
 4. Re-run `rg -n "(AKIA|BEGIN PRIVATE KEY|SECRET|TOKEN|PASSWORD|api[_-]?key)" docs/placeholders/invoicesnap` and document the clean result in release notes.
+
+## Loop 004 Stage 3
+- Compatibility objective: keep all prior checklist points unchanged while tightening operational cadence.
+
+### Sentinel Operations Cadence (Additive)
+- Run dead code scan once per placeholder change and once pre-merge for release branches.
+- Run secret scan pre-commit and pre-merge; block release packaging until both scans pass.
+- Require a second reviewer sign-off when any cleanup removes placeholder sections or files.
+- Log scan command outputs in PR notes to preserve rollback context.
+
+## Loop 004 Stage 4
+- Finalized additive sentinel cleanup and security checklist expansion for InvoiceSnap placeholders (worker-sentinel).
+- Updated: 2026-03-01T00:00:00Z
