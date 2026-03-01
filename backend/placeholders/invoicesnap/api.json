@@ -2,6 +2,8 @@
   "product": "InvoiceSnap",
   "endpoint": "/api/invoices/metadata",
   "version": "v0",
+  "schema_version": "2026-03-01",
+  "resource": "invoice_metadata",
   "fields": [
     "invoice_id",
     "client_name",
@@ -10,6 +12,21 @@
     "due_date",
     "status"
   ],
+  "status_enum": [
+    "draft",
+    "sent",
+    "paid",
+    "overdue",
+    "void"
+  ],
+  "response_example": {
+    "invoice_id": "inv_2026_0001",
+    "client_name": "Acme Studio",
+    "total_due": 1250.0,
+    "currency": "USD",
+    "due_date": "2026-03-15",
+    "status": "sent"
+  },
   "notes": "metadata contract placeholder - final",
   "metadata": {
     "product": {
@@ -21,7 +38,15 @@
     "contract": {
       "method": "GET",
       "response_type": "application/json",
-      "backward_compatibility": "additive-only"
+      "backward_compatibility": "additive-only",
+      "nullability": {
+        "invoice_id": false,
+        "client_name": false,
+        "total_due": false,
+        "currency": false,
+        "due_date": false,
+        "status": false
+      }
     }
   },
   "loop_002_stage1": {
@@ -54,5 +79,11 @@
     "loop": "004",
     "finalized_at": "2026-02-28T12:00:00Z",
     "status": "ready"
+  },
+  "loop_004_stage3": {
+    "loop": "004",
+    "at": "2026-03-01T00:00:00Z",
+    "status": "expanded_contract",
+    "worker": "worker-backend"
   }
 }
