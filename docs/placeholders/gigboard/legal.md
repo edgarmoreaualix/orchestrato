@@ -37,3 +37,7 @@ Last updated in loop 001 finalization.
 ## Loop 004 Stage 2
 - Added concise legal placeholder terms, prohibited content, and takedown policy details.
 - Updated: 2026-02-28T11:53:58Z
+
+## Loop 004 Stage 3
+- Clarified liability, moderation triggers, and enforcement outcomes without changing policy intent.
+- Updated: 2026-03-01T00:00:00Z
