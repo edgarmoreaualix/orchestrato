@@ -19,6 +19,41 @@
     "focus",
     "disabled"
   ],
+  "uptime_colors": {
+    "operational": "#16a34a",
+    "degraded": "#f59e0b",
+    "outage": "#dc2626",
+    "maintenance": "#2563eb",
+    "unknown": "#64748b"
+  },
+  "status_page": {
+    "semantic_tokens": [
+      "status.operational",
+      "status.degraded",
+      "status.outage",
+      "status.maintenance",
+      "status.unknown"
+    ],
+    "state_badges": {
+      "operational": {
+        "bg": "#dcfce7",
+        "fg": "#166534",
+        "border": "#86efac"
+      },
+      "degraded": {
+        "bg": "#fef3c7",
+        "fg": "#92400e",
+        "border": "#fcd34d"
+      },
+      "outage": {
+        "bg": "#fee2e2",
+        "fg": "#991b1b",
+        "border": "#fca5a5"
+      }
+    },
+    "contrast_target": "WCAG AA",
+    "notes": "Additive placeholder tokens for uptime visualization and state badges."
+  },
   "notes": "theme placeholder - final",
   "loop_002_stage1": {
     "at": "2026-02-28T11:38:52Z",
@@ -38,6 +73,15 @@
   "loop_stage2": {
     "loop": "003",
     "finalized_at": "2026-02-28T11:46:13Z",
+    "status": "ready"
+  },
+  "loop_004_stage1": {
+    "at": "2026-02-28T11:53:39Z",
+    "product": "StatusDock",
+    "worker": "worker-frontend"
+  },
+  "loop_004_stage2": {
+    "finalized_at": "2026-03-01T06:46:56Z",
     "status": "ready"
   }
 }
