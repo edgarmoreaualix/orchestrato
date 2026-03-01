@@ -1,0 +1,17 @@
+{
+  "task_id": "L004-O5-SE-001",
+  "status": "done",
+  "files_changed": [
+    "docs/placeholders/linknest/sentinel.md",
+    "ops/loops/004/v2/orchestrators/orch-05/summaries/worker-sentinel.json"
+  ],
+  "tests_run": [
+    "cat docs/placeholders/linknest/sentinel.md"
+  ],
+  "commit_sha": "f6a00efca0798c2e814e690ee6476c3cece9a44e",
+  "summary": "Expanded LinkNest sentinel checklist with additive Loop 004 Stage 2/3/4 guidance, including stronger spam-link detection and dead-content removal lifecycle checks while preserving prior checklist semantics.",
+  "risks": [
+    "Checklist-only placeholder update; enforcement depends on downstream implementation teams.",
+    "Timestamp in Stage 4 is static and may need refresh in future loops."
+  ]
+}
