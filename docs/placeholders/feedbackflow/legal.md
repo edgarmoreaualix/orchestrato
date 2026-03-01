@@ -38,5 +38,6 @@ Last updated in loop 001 finalization.
 ## Loop 004 Stage 2
 - Privacy note: FeedbackFlow stores account identifiers, submission content, and basic technical logs needed to operate the service and investigate abuse reports.
 - Retention note: moderation records and safety logs are retained for up to 365 days, then deleted or de-identified unless a longer hold is required for legal claims, active investigations, or law enforcement requests.
+- Moderation process placeholder: when content is removed for policy reasons, the submitter may request a review through support for a secondary check.
 - User rights placeholder: users may request access, correction, or deletion of their feedback data, subject to legal and security exceptions.
 - Updated: 2026-03-01T00:00:00Z
