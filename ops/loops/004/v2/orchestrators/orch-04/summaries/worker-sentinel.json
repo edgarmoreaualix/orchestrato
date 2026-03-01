@@ -1,0 +1,17 @@
+{
+  "task_id": "L004-O4-SE-001",
+  "status": "done",
+  "files_changed": [
+    "docs/placeholders/feedbackflow/sentinel.md",
+    "ops/loops/004/v2/orchestrators/orch-04/summaries/worker-sentinel.json"
+  ],
+  "tests_run": [
+    "cat docs/placeholders/feedbackflow/sentinel.md"
+  ],
+  "commit_sha": "a88137416a93e6a4722b16bc8435dbc7d1ed94b8",
+  "summary": "Finalized Loop 004 worker-sentinel checklist for FeedbackFlow with additive sanitization coverage, backward-compatible simplification plan, and verification trace.",
+  "risks": [
+    "Checklist verifies process and expectations only; enforcement depends on downstream implementation and CI policy wiring.",
+    "Legacy checklist mapping is deferred through Loop 005 and may create temporary duplication until migration sign-off."
+  ]
+}
