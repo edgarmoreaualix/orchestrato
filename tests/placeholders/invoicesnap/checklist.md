@@ -41,3 +41,12 @@ Last updated in loop 001 finalization.
 ## Loop 004 Stage 2
 - Finalized additive checklist coverage for InvoiceSnap loop 4.
 - Updated: 2026-03-01T00:00:00Z
+
+## Loop 004 Stage 3
+- Verification matrix for placeholder contract checks.
+- Updated: 2026-03-01T00:10:00Z
+
+Validation outcomes to verify:
+- Happy path: returns parsable invoice summary with non-empty `invoice_id`.
+- Edge case 1: rejects payloads with empty `line_items` and emits a validation error.
+- Edge case 2: rejects non-numeric `quantity` or `unit_price` with contract failure.
